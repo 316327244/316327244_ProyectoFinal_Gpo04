@@ -1,0 +1,25 @@
+newmtl MueblesCafes:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd mueblecafe_Diffuse.png
+bump  -bm 1 mueblecafe_Normal.png
+Ni 1.00
+newmtl MueblesCafes:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd mueblecafe_Diffuse.png
+Ni 1.00
+newmtl MueblesCafes:phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.07 0.07 0.07
+Tf 1.00 1.00 1.00
+map_Kd rejamueble_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks SpecularMap_(1).png
+Ns 98.00

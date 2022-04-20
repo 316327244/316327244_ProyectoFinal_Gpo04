@@ -1,0 +1,58 @@
+newmtl bigmueble1:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd muebleg_Albedo.png
+map_Ka muebleg_AO.png
+bump  -bm 1 muebleg_Normal.png
+Ni 1.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sabanacama_Albedo.png
+bump  -bm 0.47619 sabanacama_Normal.png
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sabanacamablanca_Albedo.png
+bump  -bm 1 sabanacamablanca_Normal.png
+Ni 1.00
+newmtl phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd rejamueble_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks rejamueble_Specular.png
+newmtl phongE2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderamueble_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks maderamueble_Specular.png
+newmtl phongE6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tapetearnold_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks tapetearnold_Specular.png

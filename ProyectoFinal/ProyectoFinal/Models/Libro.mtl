@@ -1,0 +1,371 @@
+newmtl MuebleMorado:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd muebleg_Albedo.png
+map_Ka muebleg_AO.png
+bump  -bm 1 muebleg_Normal.png
+Ni 1.00
+newmtl MueblesCafes:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd mueblecafe_Diffuse.png
+bump  -bm 1 mueblecafe_Normal.png
+Ni 1.00
+newmtl MueblesCafes:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd mueblecafe_Diffuse.png
+Ni 1.00
+newmtl MueblesCafes:phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd rejamueble_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks rejamueble_Specular.png
+Ns 0.06
+newmtl Piso:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tapetearnold_Diffuse.png
+bump  -bm 1 tapetearnold_Normal.png
+Ni 1.00
+newmtl cama:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sabanacama_Albedo.png
+bump  -bm 0.47619 sabanacama_Normal.png
+Ni 1.00
+newmtl cama:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sabanacamablanca_Albedo.png
+bump  -bm 1 sabanacamablanca_Normal.png
+Ni 1.00
+newmtl cama:phongE2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd maderamueble_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks maderamueble_Specular.png
+Ns 0.06
+newmtl cama:phongE5SG
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl escaleras:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd mueblecafe_Diffuse.png
+bump  -bm 1 mueblecafe_Normal.png
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__lambert2SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__lambert2SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__lambert2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__lambert2SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__lambert2SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__lambert2SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__lambert2SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__lambert2SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__lambert2SG8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG10
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG11
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG12
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG13
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG14
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG16
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__lambert2SG18
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert2SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert2SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert2SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert2SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__lambert2SG10
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert2SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert2SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__lambert2SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert2SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert2SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librotexture_Albedo.png
+Ni 1.00
