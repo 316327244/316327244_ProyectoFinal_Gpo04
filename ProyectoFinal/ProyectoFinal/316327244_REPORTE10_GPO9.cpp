@@ -162,6 +162,8 @@ int main()
 	Model MuebleM((char*)"Models/MuebleMorado.obj");
 	Model MuebleC((char*)"Models/MueblesCafes.obj");
 	Model Piso((char*)"Models/Piso.obj");
+	Model Cajon((char*)"Models/cajon.obj");
+	Model Lampara ((char*)"Models/Lampara.obj");
 
 
 
@@ -311,8 +313,22 @@ int main()
 		MuebleC.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		//Box.Draw(lightingShader);
-		//Esfera.Draw(lightingShader);
+
+
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Cajon.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Lampara.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		
 
 
 		

@@ -1,9 +1,10 @@
-newmtl Lampara4:lambert4SG
+newmtl Lampara5:lambert4SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Lampara_Albedo.png
+bump  -bm 1 Lampara_Normal.png
 Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks Lampara_Specular.png
@@ -239,15 +240,278 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd librotexture_Albedo.png
 Ni 1.00
-newmtl MuebleMorado1:lambert2SG
+newmtl Libro1:Material_002
 illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
 Tf 1.00 1.00 1.00
-map_Kd muebleg_Albedo.png
-map_Ka muebleg_AO.png
-bump  -bm 1 muebleg_Normal.png
-Ni 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_004
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_006
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_008
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_010
+illum 4
+Kd 0.48 0.13 0.01
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_012
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_014
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_016
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_018
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_020
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_022
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_024
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_026
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_028
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_030
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_032
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_034
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_036
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_038
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_040
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_042
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_044
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_046
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_048
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_050
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_052
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_054
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_056
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_058
+illum 4
+Kd 0.00 0.20 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_060
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_062
+illum 4
+Kd 0.38 0.27 0.01
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_064
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_066
+illum 4
+Kd 0.38 0.27 0.01
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Libro1:Material_068
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
 newmtl cajon1:Material
 illum 4
 Kd 0.60 0.60 0.60
@@ -582,42 +846,6 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd cajon_Albedo.png
-Ni 1.00
-newmtl camaprueba3:lambert4SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd sabanacamablanca_Albedo.png
-Ni 1.00
-newmtl camaprueba3:lambert5SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd mueblecafe_Diffuse.png
-Ni 1.00
-newmtl camaprueba3:lambert6SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd sabanacama_Albedo.png
-Ni 1.00
-newmtl camaprueba3:lambert7SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd sabanacamablanca_Diffuse.png
-Ni 1.00
-newmtl escaleras:lambert3SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd mueblecafe_Diffuse.png
-bump  -bm 1 mueblecafe_Normal.png
 Ni 1.00
 newmtl initialShadingGroup
 illum 4
