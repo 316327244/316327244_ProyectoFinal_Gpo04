@@ -1,9 +1,14 @@
-﻿  316327244_REPORTE10_GPO9.cpp
-C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_REPORTE10_GPO9.cpp(198,24): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_REPORTE10_GPO9.cpp(510,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_REPORTE10_GPO9.cpp(511,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_REPORTE10_GPO9.cpp(515,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_REPORTE10_GPO9.cpp(516,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_REPORTE10_GPO9.cpp(518,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_REPORTE10_GPO9.cpp(519,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+﻿  316327244_PROYECTOFINAL_GPO9.cpp
+C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_PROYECTOFINAL_GPO9.cpp(208,24): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_PROYECTOFINAL_GPO9.cpp(577,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_PROYECTOFINAL_GPO9.cpp(578,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_PROYECTOFINAL_GPO9.cpp(582,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_PROYECTOFINAL_GPO9.cpp(583,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_PROYECTOFINAL_GPO9.cpp(585,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\ProyectoFinal\316327244_PROYECTOFINAL_GPO9.cpp(586,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+soil2-debug.lib(etc1_utils.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(etc1_utils.obj)' o en 'C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\Debug\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(image_DXT.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(image_DXT.obj)' o en 'C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\Debug\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(image_helper.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(image_helper.obj)' o en 'C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\Debug\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(SOIL2.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(SOIL2.obj)' o en 'C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\Debug\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
   ProyectoFinal.vcxproj -> C:\Users\daddy\Desktop\Repositorio\316327244_Proyecto_Gpo09\ProyectoFinal\Debug\ProyectoFinal.exe

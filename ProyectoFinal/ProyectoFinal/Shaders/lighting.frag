@@ -60,6 +60,7 @@ uniform PointLight pointLights[NUMBER_OF_POINT_LIGHTS];
 uniform SpotLight spotLight;
 uniform Material material;
 uniform int activaTransparencia;
+uniform vec4 ColorAlpha;
 
 // Function prototypes
 vec3 CalcDirLight( DirLight light, vec3 normal, vec3 viewDir );
@@ -85,7 +86,7 @@ void main( )
     result += CalcSpotLight( spotLight, norm, FragPos, viewDir );
     
 	
-    color = vec4( result,texture( material.diffuse, TexCoords).rgb );
+    color = vec4(ColorAlpha)*vec4( result,texture( material.diffuse, TexCoords).rgb );
 	  if(color.a < 0.1 &&  activaTransparencia==1)
         discard;
 }

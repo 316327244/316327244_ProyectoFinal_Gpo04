@@ -304,22 +304,6 @@ Tf 1.00 1.00 1.00
 Ni 1.00
 Ks 0.00 0.00 0.00
 Ns 0.06
-newmtl TechoCristal:Material_009
-illum 4
-Kd 0.60 0.60 0.60
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.00 0.00 0.00
-Ns 0.06
-newmtl TechoCristal:Material_023
-illum 4
-Kd 0.60 0.60 0.60
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.00 0.00 0.00
-Ns 0.06
 newmtl cajon:pasted__pasted__lambert2SG3
 illum 4
 Kd 0.00 0.00 0.00
@@ -391,21 +375,3 @@ map_Kd Puerta_Albedo.png
 Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks Puerta_Gloss.png
-newmtl phongE6SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 0.34 0.34 0.34
-map_Kd TechoVentana_Albedo.png
-Ni 1.00
-Ks 0.00 0.00 0.00
-map_Ks TechoVentana_Gloss.png
-newmtl phongE7SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd TechoVentana_Albedo.png
-Ni 1.00
-Ks 0.00 0.00 0.00
-map_Ks TechoCristal_Gloss.png

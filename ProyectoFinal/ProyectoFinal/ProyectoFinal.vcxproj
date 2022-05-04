@@ -155,7 +155,7 @@
     <None Include="Shaders\lighting.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="316327244_REPORTE10_GPO9.cpp" />
+    <ClCompile Include="316327244_PROYECTOFINAL_GPO9.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

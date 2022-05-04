@@ -395,7 +395,7 @@ newmtl phongE6SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
-Tf 0.34 0.34 0.34
+Tf 0.29 0.29 0.29
 map_Kd TechoVentana_Albedo.png
 Ni 1.00
 Ks 0.00 0.00 0.00

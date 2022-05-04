@@ -37,7 +37,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="316327244_REPORTE10_GPO9.cpp">
+    <ClCompile Include="316327244_PROYECTOFINAL_GPO9.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
