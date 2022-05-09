@@ -23,12 +23,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\lamp.frag">
-      <Filter>Archivos de origen</Filter>
-    </None>
-    <None Include="Shaders\lamp.vs">
-      <Filter>Archivos de origen</Filter>
-    </None>
     <None Include="Shaders\lighting.frag">
       <Filter>Archivos de origen</Filter>
     </None>
@@ -37,7 +31,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="316327244_PROYECTOFINAL_GPO9.cpp">
+    <ClCompile Include="316327244_ProyectoFinal_Gpo9.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
