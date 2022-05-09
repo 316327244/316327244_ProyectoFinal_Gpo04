@@ -21,12 +21,21 @@
     <ClInclude Include="Model.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\lighting.frag">
       <Filter>Archivos de origen</Filter>
     </None>
     <None Include="Shaders\lighting.vs">
+      <Filter>Archivos de origen</Filter>
+    </None>
+    <None Include="Shaders\anim.frag">
+      <Filter>Archivos de origen</Filter>
+    </None>
+    <None Include="Shaders\anim.vs">
       <Filter>Archivos de origen</Filter>
     </None>
   </ItemGroup>
