@@ -2,7 +2,7 @@
 Laboratorio de Computacion Grafica e Interaccion Humano Computadora
 Proyecto Final
 Renderizado de una recamara y fachada en OpenGL */
- 
+
 
 #include <iostream>
 #include <cmath>
@@ -34,14 +34,14 @@ Renderizado de una recamara y fachada en OpenGL */
 void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode);
 void MouseCallback(GLFWwindow* window, double xPos, double yPos);
 void DoMovement();
-void animacion(); 
+void animacion();
 ///
 ///@fn void *animacion()
 ///@brief Realiza la animacion de la puerta
 /// 
 
 // Dimensiones de la ventana
-const GLuint WIDTH = 1920, HEIGHT = 1080;
+const GLuint WIDTH = 800, HEIGHT = 600;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
@@ -54,6 +54,7 @@ bool firstMouse = true;
 //Variables para las animaciones sencillas.
 float tiempo;
 glm::vec3 PosIni(25.68f, -25.03f, 71.48f);
+glm::vec3 PosIniPajaro(7.5f, 24.00, 39.27);
 
 
 //Varaibles for controlling states animations.
@@ -72,9 +73,8 @@ bool cerrado2 = false;
 bool abierto3 = false;
 bool cerrado3 = false;
 
-//Animacion compleja
+//Animaciones complejas Sol
 bool movSol = false;
-bool movSol2 = false;
 float movSolY = 0.0;
 float movSolZ = 0.0;
 
@@ -84,6 +84,25 @@ bool recorrido3 = false;
 bool recorrido4 = false;
 bool recorrido5 = false;
 
+
+//Animaciones complejas pajaro
+bool movPajaro = false;
+float movPajaroX = 00.0;
+float movPajaroY = 00.0;
+float movPajaroZ = 00.0;
+bool rotNormal = true;
+bool rotInversa = false;
+float rotAla = 45;
+float rotPajaroY = 0;
+float rotPajaroX = 0;
+//variables para controlar los estados de animacion.
+bool recorridoP1 = true;
+bool recorridoP2 = false;
+bool recorridoP3 = false;
+bool recorridoP4 = false;
+bool recorridoP5 = false;
+bool recorridoP6 = false;
+bool recorridoP7 = false;
 
 //VARAIBLES PARA ENCENDER LAS LUCES
 // Light attributes
@@ -125,10 +144,6 @@ bool encendidoP = false;
 bool apagadoP = false;
 bool encendidoS = false;
 bool apagadoS = false;
-
-
-
-
 
 
 
@@ -189,6 +204,8 @@ int main()
 	Shader Anim("Shaders/anim.vs", "Shaders/anim.frag");
 
 	//Modelos que se renderizaran
+	Model Ala1((char*)"Models/Ala1.obj");
+	Model Ala2((char*)"Models/Ala2.obj");
 	Model Asta((char*)"Models/Asta.obj");
 	Model Antena((char*)"Models/Antena.obj");
 	Model Bandera((char*)"Models/Bandera.obj");
@@ -196,6 +213,7 @@ int main()
 	Model Cama((char*)"Models/cama.obj");
 	Model Casa((char*)"Models/Casa.obj");
 	Model CasaTecho((char*)"Models/CasaTecho.obj");
+	Model CuerpoPajaro((char*)"Models/Cuerpo.obj");
 	Model DVD((char*)"Models/DVD.obj");
 	Model Escaleras((char*)"Models/escaleras.obj");
 	Model Lampara((char*)"Models/Lampara.obj");
@@ -204,6 +222,7 @@ int main()
 	Model Marcos((char*)"Models/Marcos.obj");
 	Model MuebleM((char*)"Models/MuebleMorado.obj");
 	Model MuebleC((char*)"Models/MueblesCafes.obj");
+	Model Mundo((char*)"Models/Mundo.obj");
 	Model ParedArnold((char*)"Models/ParedArnold.obj");
 	Model ParedFachada((char*)"Models/ParedFachada.obj");
 	Model Piso((char*)"Models/Piso.obj");
@@ -215,7 +234,6 @@ int main()
 	Model Rotoplas((char*)"Models/Rotoplas.obj");
 	Model Sillon((char*)"Models/Sillon.obj");
 	Model Sol((char*)"Models/Sol.obj");
-	Model Sky((char*)"Models/Skybox.obj");
 	Model Tubos((char*)"Models/Tubos.obj");
 	Model Ventanas((char*)"Models/Ventanas.obj");
 	Model VentanaPuerta((char*)"Models/VentanaPuerta.obj");
@@ -239,7 +257,7 @@ int main()
 	glUniform1i(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 0);
 	glUniform1i(glGetUniformLocation(lightingShader.Program, "material.specular"), 1);
 
-	glm::mat4 projection = glm::perspective(camera.GetZoom(), (GLfloat)SCREEN_WIDTH / (GLfloat)SCREEN_HEIGHT, 0.01f, 300.0f);
+	glm::mat4 projection = glm::perspective(camera.GetZoom(), (GLfloat)SCREEN_WIDTH / (GLfloat)SCREEN_HEIGHT, 0.01f, 500.0f);
 
 	// Game loop
 	while (!glfwWindowShouldClose(window))
@@ -272,10 +290,10 @@ int main()
 
 
 		// Directional light
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.direction"), -0.2f, -1.0f, -0.3f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.ambient"), 0.30f, 0.30f, 0.3f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.diffuse"), 0.01f, 0.01f, 0.03f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), 2.0f, 2.0f, 0.8f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.direction"), -0.2f, -5.0f, -0.3f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.ambient"), 0.3f, 0.3f, 0.3f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.diffuse"), 0.425f, 0.472f, 0.472f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), 0.7f, 0.7f, 0.7f);
 
 
 		// Point light SOL
@@ -283,18 +301,18 @@ int main()
 
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].position"), pointLightPositions[0].x, pointLightPositions[0].y + movSolY, pointLightPositions[0].z + movSolZ);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].ambient"), 1.0f, 0.0f, 0.0f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].diffuse"), 1.0f, 0.0f, 0.0f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].specular"), 1000.0f, 100.0f, 0.0f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].diffuse"), 5.0f, 0.0f, 0.0f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].specular"), 500.0f, 50.0f, 0.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].constant"), 1.0f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].linear"), 0.30f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].quadratic"), 0.30f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].linear"), 0.60f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].quadratic"), 0.40f);
 
 		// Point light LAMPARA DORADA1
 
 
 
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[1].position"), pointLightPositions[1].x, pointLightPositions[1].y, pointLightPositions[1].z);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[1].ambient"), ambientP.x,ambientP.y,ambientP.z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[1].ambient"), ambientP.x, ambientP.y, ambientP.z);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[1].diffuse"), diffuseP.x, diffuseP.y, diffuseP.z);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[1].specular"), 1.0f, 1.0f, 0.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[1].constant"), 1.0f);
@@ -303,7 +321,7 @@ int main()
 
 		// Point light LAMPARA DORADA2
 
-		
+
 
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[2].position"), pointLightPositions[2].x, pointLightPositions[2].y, pointLightPositions[2].z);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[2].ambient"), ambientP.x, ambientP.y, ambientP.z);
@@ -314,7 +332,7 @@ int main()
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[2].quadratic"), 1.8f);
 
 		// Point light LAMPARA DORADA3
-		
+
 
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].position"), pointLightPositions[3].x, pointLightPositions[3].y, pointLightPositions[3].z);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].ambient"), ambientP.x, ambientP.y, ambientP.z);
@@ -328,9 +346,9 @@ int main()
 
 
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLights[0].position"), spotLightPositions[0].x, spotLightPositions[0].y, spotLightPositions[0].z);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLights[0].direction"),0.0f, -1.0f, 0.5f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLights[0].direction"), 0.0f, -1.0f, 0.5f);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLights[0].ambient"), ambientS.x, ambientS.y, ambientS.z);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLights[0].diffuse"),diffuseS.x, diffuseS.y, diffuseS.z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLights[0].diffuse"), diffuseS.x, diffuseS.y, diffuseS.z);
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLights[0].specular"), 1.0f, 1.0f, 1.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "spotLights[0].constant"), 1.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "spotLights[0].linear"), 0.7f);
@@ -412,7 +430,7 @@ int main()
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "spotLights[5].outerCutOff"), glm::cos(glm::radians(15.0f)));
 
 		// Set material properties
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 15.0f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 0.78f);
 
 		// Create camera transformations
 		glm::mat4 view;
@@ -430,7 +448,7 @@ int main()
 
 		glm::mat4 model(1);
 
-		
+
 
 		//Carga de modelo 
 
@@ -550,6 +568,13 @@ int main()
 		MuebleC.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		//Mundo
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Mundo.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		//ParedArnold
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -564,27 +589,34 @@ int main()
 		ParedFachada.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		//Piso
+
+		//ParedFachada
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		Piso.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		//Plano
-		model = glm::mat4(1);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		Plano.Draw(lightingShader);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+
+
 		//Planta
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		Planta.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0); \
+
+			//Plano
+			model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Plano.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+
+
+
 		//Rotoplas
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -605,13 +637,6 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		Tubos.Draw(lightingShader);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		//Skybox
-		model = glm::mat4(1);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		Sky.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		//TV
@@ -671,7 +696,7 @@ int main()
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 
 
-		
+
 		//ANIMACION A OBJETOS COMPLEJAS
 
 		//Sol
@@ -688,6 +713,42 @@ int main()
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		glDisable(GL_BLEND);
 
+		//Pajaro
+		//ala1
+		model = glm::mat4(1);
+		model = glm::translate(model, PosIniPajaro + glm::vec3(movPajaroX, movPajaroY, movPajaroZ));
+		model = glm::rotate(model, glm::radians(rotPajaroY), glm::vec3(0.0f, 1.0f, 0.0));
+		model = glm::rotate(model, glm::radians(rotPajaroX), glm::vec3(1.0f, 0.0f, 0.0));
+		model = glm::rotate(model, glm::radians(rotAla), glm::vec3(0.0f, 0.0f, 1.0));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Ala1.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		//ala2
+		model = glm::mat4(1);
+		model = glm::translate(model, PosIniPajaro + glm::vec3(movPajaroX, movPajaroY, movPajaroZ));
+		model = glm::rotate(model, glm::radians(rotPajaroY), glm::vec3(0.0f, 1.0f, 0.0));
+		model = glm::rotate(model, glm::radians(rotPajaroX), glm::vec3(1.0f, 0.0f, 0.0));
+		model = glm::rotate(model, glm::radians(-rotAla), glm::vec3(0.0f, 0.0, 1.0));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Ala2.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		//cuerpoPajaro
+		model = glm::mat4(1);
+		model = glm::translate(model, PosIniPajaro + glm::vec3(movPajaroX, movPajaroY, movPajaroZ));
+		model = glm::rotate(model, glm::radians(rotPajaroY), glm::vec3(0.0f, 1.0f, 0.0));
+		model = glm::rotate(model, glm::radians(rotPajaroX), glm::vec3(1.0f, 0.0f, 0.0));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		CuerpoPajaro.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+
+
+
 
 
 		//Ventanas
@@ -696,7 +757,7 @@ int main()
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "ColorAlpha"), 1.0, 1.0, 1.0, 0.5);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "ColorAlpha"), 1.0, 1.0, 1.0, 0.8);
 		Ventanas.Draw(lightingShader);
 		glDisable(GL_BLEND);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0, 1.0, 1.0, 1.0);
@@ -771,8 +832,14 @@ void DoMovement()
 
 	if (keys[GLFW_KEY_V]) {
 		movSol = false;
-		movSol2 = false;
+	}
 
+	if (keys[GLFW_KEY_X]) {
+		movPajaro = true;
+	}
+
+	if (keys[GLFW_KEY_C]) {
+		movPajaro = false;
 	}
 
 }
@@ -973,6 +1040,106 @@ void animacion()
 		}
 	}
 
+	//animacion compleja Pajaro
+	if (movPajaro) {
+		//Animacion de aleteo
+		if (rotNormal) {
+			if (rotAla <= 45 && rotAla > -44) {
+				rotAla -= 3.0f;
+			}
+			else {
+				rotInversa = true;
+				rotNormal = false;
+
+			}
+		}
+
+		if (rotInversa) {
+			if (rotAla >= -45 && rotAla < 44) {
+
+				rotAla += 3.0f;
+			}
+			else {
+				rotInversa = false;
+				rotNormal = true;
+			}
+		}
+		//animacion de vuelo en movimiento
+		if (recorridoP1)
+		{
+			movPajaroZ -= 0.1f;
+			if (movPajaroZ < -38)
+			{
+				recorridoP1 = false;
+				recorridoP2 = true;
+			}
+		}
+		if (recorridoP2)
+		{
+			rotPajaroY = 90;
+			movPajaroX -= 0.1f;
+			if (movPajaroX < -20) {
+				recorridoP2 = false;
+				recorridoP3 = true;
+			}
+		}
+		if (recorridoP3)
+		{
+			rotPajaroY = 180;
+			rotPajaroX = -45;
+			movPajaroY -= 0.15;
+			movPajaroZ += 0.1f;
+			if (movPajaroZ > -30) {
+				recorridoP3 = false;
+				recorridoP4 = true;
+
+			}
+		}
+		if (recorridoP4) {
+			rotPajaroX = 0;
+			movPajaroZ += 0.1f;
+			if (movPajaroZ > -8)
+			{
+				recorridoP4 = false;
+				recorridoP5 = true;
+			}
+		}
+		if (recorridoP5)
+		{
+
+			rotPajaroX = 45;
+			movPajaroY += 0.15;
+			movPajaroZ += 0.1f;
+			if (movPajaroZ > 0) {
+				recorridoP5 = false;
+				recorridoP6 = true;
+
+			}
+		}
+
+		if (recorridoP6)
+		{
+			rotPajaroX = 0;
+			rotPajaroY = 270;
+			movPajaroX += 0.1;
+			if (movPajaroX > 0) {
+				recorridoP6 = false;
+				recorridoP7 = true;
+
+			}
+		}
+
+		if (recorridoP7) {
+			rotPajaroY = 0;
+			recorridoP7 = false;
+			recorridoP1 = true;
+
+		}
+	}
+
+
+
+
 	if (encendidoP)
 	{
 		ambientP = glm::vec3(0.3f, 0.2f, 0.001f);
@@ -983,13 +1150,13 @@ void animacion()
 	if (apagadoP) {
 		ambientP = glm::vec3(0.0f, 0.0f, 0.0f);
 		diffuseP = glm::vec3(0.0f, 0.0f, 0.0f);
-		luzPointLight = 0; 
-		
+		luzPointLight = 0;
+
 	}
 
 	if (encendidoS)
 	{
-		ambientS = glm::vec3(0.8f,0.8f,10.0f);
+		ambientS = glm::vec3(0.8f, 0.8f, 10.0f);
 		diffuseS = glm::vec3(10.0f, 10.0f, 00.0f);
 		luzSpotLight = 1;
 

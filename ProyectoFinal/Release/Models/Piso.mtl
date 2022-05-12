@@ -1,0 +1,27 @@
+newmtl ParedArnold:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pared1_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Pared1_Gloss.png
+Ns 0.06
+newmtl Piso1:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tapetearnold_Diffuse.png
+Ni 1.00
+newmtl Puerta7:phongE4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Puerta_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Puerta_Gloss.png
+Ns 0.06

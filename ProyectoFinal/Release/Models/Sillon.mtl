@@ -1,0 +1,44 @@
+newmtl ParedArnold:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pared1_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Pared1_Gloss.png
+Ns 0.06
+newmtl Sillon:Material_006
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sillon:Material_010
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sillon:Material_012
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sillon4:phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sillon_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Sillon_Gloss.png
+Ns 0.06

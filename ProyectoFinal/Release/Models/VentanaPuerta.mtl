@@ -1,0 +1,20 @@
+newmtl PuertaFachada3:phongE3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd PuertaFachada_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks PuertaFachada_Gloss.png
+Ns 0.06
+newmtl Ventanas:phongE4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Ventanas_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Ventanas_Gloss.png
+Ns 0.06

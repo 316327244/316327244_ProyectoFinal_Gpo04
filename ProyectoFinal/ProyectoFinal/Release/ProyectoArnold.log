@@ -1,0 +1,27 @@
+﻿  ProyectoFinal.cpp
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(267,24): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(708,93): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(760,93): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(770,23): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1020,20): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1090,22): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1111,22): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1124,21): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1178,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1179,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1183,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1184,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1186,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\daddy\Documents\ProyectoArnold\ProyectoArnold\ProyectoFinal.cpp(1187,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+soil2-debug.lib(SOIL2.obj) : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/OPT:ICF'
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRTD' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  Generando código
+  1 of 627 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+soil2-debug.lib(etc1_utils.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(etc1_utils.obj)' o en 'C:\Users\daddy\Documents\ProyectoArnold\Release\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(image_DXT.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(image_DXT.obj)' o en 'C:\Users\daddy\Documents\ProyectoArnold\Release\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(image_helper.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(image_helper.obj)' o en 'C:\Users\daddy\Documents\ProyectoArnold\Release\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(SOIL2.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(SOIL2.obj)' o en 'C:\Users\daddy\Documents\ProyectoArnold\Release\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+  ProyectoArnold.vcxproj -> C:\Users\daddy\Documents\ProyectoArnold\Release\ProyectoArnold.exe

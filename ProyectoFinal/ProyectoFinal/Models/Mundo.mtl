@@ -1,0 +1,19 @@
+newmtl Nubes:Material_001
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd Nubes_color.png
+Ni 1.45
+Ks 0.00 0.00 0.00
+map_Ks Nubes_specular.png
+Ns 250.00
+newmtl phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Mundo_color.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Mundo_specular.png

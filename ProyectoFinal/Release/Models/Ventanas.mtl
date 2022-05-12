@@ -1,0 +1,10 @@
+newmtl Ventanas:phongE4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Ventanas_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Ventanas_Gloss.png
+Ns 0.06

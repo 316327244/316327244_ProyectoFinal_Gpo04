@@ -1,0 +1,291 @@
+newmtl Lampara1:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Lampara_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Lampara_Specular.png
+Ns 0.06
+newmtl Libro2:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro2_color.png
+Ni 1.00
+newmtl Libro2:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libronaranja.png
+Ni 1.00
+newmtl Libro2:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro2_color.png
+Ni 1.00
+newmtl Libro2:lambert5SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro2_color.png
+Ni 1.00
+newmtl Libro2:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librorojo.png
+Ni 1.00
+newmtl Libro2:lambert7SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librorojo.png
+Ni 1.00
+newmtl Libro2:lambert7SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librorojo.png
+Ni 1.00
+newmtl Libro2:lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libronegro.png
+Ni 1.00
+newmtl Libro2:lambert10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libroverde.png
+Ni 1.00
+newmtl Libro3:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro2_color.png
+Ni 1.00
+newmtl Libro3:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libronaranja.png
+Ni 1.00
+newmtl Libro3:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro2_color.png
+Ni 1.00
+newmtl Libro3:lambert5SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro2_color.png
+Ni 1.00
+newmtl Libro3:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librorojo.png
+Ni 1.00
+newmtl Libro3:lambert7SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librorojo.png
+Ni 1.00
+newmtl Libro3:lambert7SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd librorojo.png
+Ni 1.00
+newmtl Libro3:lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libronegro.png
+Ni 1.00
+newmtl Libro3:lambert10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libroverde.png
+Ni 1.00
+newmtl MuebleMorado7:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd muebleg_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl MueblesCafes3:lambert3SG_002
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd mueblecafe_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl MueblesCafes3:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd mueblecafe_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl MueblesCafes3:phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd rejamueble_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks rejamueble_Specular.png
+Ns 0.00
+newmtl Paredes4:CHECK
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd -s_5_5_CustomUVChecker_byValle_4K.png
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 250.00
+newmtl Piso5:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd tapetearnold_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl cajon:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cajon_Albedo.png
+Ni 1.00
+newmtl cajon:pasted__lambert2SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cajon_Albedo.png
+Ni 1.00
+newmtl cajon:pasted__lambert2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cajon_Albedo.png
+Ni 1.00
+newmtl cajon:pasted__lambert2SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cajon_Albedo.png
+Ni 1.00
+newmtl cajon:pasted__pasted__lambert2SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cajon_Albedo.png
+Ni 1.00
+newmtl cajon:pasted__pasted__lambert2SG7
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cajon_Albedo.png
+Ni 1.00
+newmtl cajon:pasted__pasted__lambert2SG9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cajon_Albedo.png
+Ni 1.00
+newmtl cajon:pasted__pasted__pasted__lambert2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cajon_Albedo.png
+Ni 1.00
+newmtl cama2:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sabanacamablanca_Albedo.png
+Ni 1.00
+newmtl cama2:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd mueblecafe_Diffuse.png
+Ni 1.00
+newmtl cama2:lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sabanacama_Albedo.png
+Ni 1.00
+newmtl cama2:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sabanacamablanca_Diffuse.png
+Ni 1.00
+newmtl escaleras1:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd mueblecafe_Diffuse.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Planta3_Albedo.png
+Ni 1.00

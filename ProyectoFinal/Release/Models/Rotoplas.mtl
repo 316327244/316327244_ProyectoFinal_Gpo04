@@ -1,0 +1,123 @@
+newmtl CasaTecho:Material
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl CasaTecho:Material_004
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl CasaTecho:Material_006
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl CasaTecho:Material_008
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl ParedFachada:CHECK
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ParedFachada_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks ParedFachada_Gloss.png
+newmtl Rotoplas:Material_026
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Rotoplas:Material_031
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Rotoplas:Material_033
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Rotoplas:Material_035
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Rotoplas1:Material_026
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Rotoplas1:Material_031
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Rotoplas1:Material_033
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Rotoplas1:Material_035
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl phongE3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CasaTecho_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks CasaTecho_Gloss.png
+newmtl phongE5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.07 0.07 0.07
+Tf 1.00 1.00 1.00
+map_Kd Rotoplas_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Rotoplas_Specular.png
