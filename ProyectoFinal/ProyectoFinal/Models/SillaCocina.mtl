@@ -1,0 +1,39 @@
+newmtl Mesa:phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Mesa_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Mesa_Gloss.png
+Ns 0.06
+newmtl ParedCocina:phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ParedCocina_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks ParedCocina_Gloss.png
+Ns 0.06
+newmtl Silla:Material_002
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd Silla_Albedo.png
+Ni 1.45
+Ks 0.00 0.00 0.00
+map_Ks Silla_Gloss.png
+newmtl SillaCocina2:phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ParedCocina_Albedo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks ParedCocina_Gloss.png
+Ns 0.06

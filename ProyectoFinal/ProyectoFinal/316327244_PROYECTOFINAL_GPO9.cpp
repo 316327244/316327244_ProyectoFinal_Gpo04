@@ -41,7 +41,7 @@ void animacion();
 /// 
 
 // Dimensiones de la ventana
-const GLuint WIDTH = 800, HEIGHT = 600;
+const GLuint WIDTH = 1280, HEIGHT = 720;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
@@ -60,11 +60,13 @@ glm::vec3 PosIniPajaro(7.5f, 24.00, 39.27);
 //Varaibles for controlling states animations.
 float rotPuerta1 = 0.0f;
 float rotPuerta2 = 0.0f;
+float rotPuerta3 = 0.0f;
 float rotSillon = 0.0f;
 
 int giro = 0;
 int giro2 = 0;
 int giro3 = 0;
+int giro4 = 0;
 
 bool abierto = false;
 bool cerrado = false;
@@ -72,6 +74,8 @@ bool abierto2 = false;
 bool cerrado2 = false;
 bool abierto3 = false;
 bool cerrado3 = false;
+bool abierto4 = false;
+bool cerrado4 = false;
 
 //Animaciones complejas Sol
 bool movSol = false;
@@ -206,6 +210,7 @@ int main()
 	//Modelos que se renderizaran
 	Model Ala1((char*)"Models/Ala1.obj");
 	Model Ala2((char*)"Models/Ala2.obj");
+	Model AlacenaEstufa((char*)"Models/Alacena-Estufa.obj");
 	Model Asta((char*)"Models/Asta.obj");
 	Model Antena((char*)"Models/Antena.obj");
 	Model Bandera((char*)"Models/Bandera.obj");
@@ -223,15 +228,21 @@ int main()
 	Model MuebleM((char*)"Models/MuebleMorado.obj");
 	Model MuebleC((char*)"Models/MueblesCafes.obj");
 	Model Mundo((char*)"Models/Mundo.obj");
+	Model Mesa((char*)"Models/Mesa.obj");
+	Model Microondas((char*)"Models/Microondas.obj");
 	Model ParedArnold((char*)"Models/ParedArnold.obj");
+	Model ParedCocina((char*)"Models/ParedCocina.obj");
 	Model ParedFachada((char*)"Models/ParedFachada.obj");
 	Model Piso((char*)"Models/Piso.obj");
 	Model Planta((char*)"Models/Planta.obj");
 	Model Plano((char*)"Models/Plano.obj");
 	Model Puerta((char*)"Models/Puerta.obj");
+	Model PuertaCocina((char*)"Models/PuertaCocina.obj");
 	Model PuertaFachada((char*)"Models/PuertaFachada.obj");
 	Model Radio((char*)"Models/Radio.obj");
+	Model Refrigerador((char*)"Models/Refrigerador.obj");
 	Model Rotoplas((char*)"Models/Rotoplas.obj");
+	Model SillaCocina((char*)"Models/SillaCocina.obj");
 	Model Sillon((char*)"Models/Sillon.obj");
 	Model Sol((char*)"Models/Sol.obj");
 	Model Tubos((char*)"Models/Tubos.obj");
@@ -477,6 +488,14 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 
+		//Alacena/Estufa
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		AlacenaEstufa.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+
 		//Cajon
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -575,11 +594,35 @@ int main()
 		Mundo.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+
+		//Mesa
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Mesa.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+
+		//Microondas
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Microondas.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+
 		//ParedArnold
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		ParedArnold.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		//ParedCocina
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		ParedCocina.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		//ParedFachada
@@ -590,7 +633,7 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 
-		//ParedFachada
+		//Piso
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
@@ -614,7 +657,13 @@ int main()
 		Plano.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-
+		//Refrigerador
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Refrigerador.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 
 
 		//Rotoplas
@@ -629,6 +678,13 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		Radio.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		//
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		SillaCocina.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 
@@ -670,6 +726,17 @@ int main()
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		PuertaFachada.Draw(lightingShader);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+
+		//PuertaCocina
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-6.008f, -10.814f, 10.296f));
+		model = glm::rotate(model, glm::radians(rotPuerta3), glm::vec3(0.0f, 1.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		PuertaCocina.Draw(lightingShader);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 
@@ -887,6 +954,19 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 			abierto2 = false;
 		}
 	}
+
+	//Animacion PuertaCocina
+	if (keys[GLFW_KEY_J]) {
+
+		if (giro4 == 0) {
+			abierto4 = true;
+			cerrado4 = false;
+		}
+		if (giro4 == 1) {
+			cerrado4 = true;
+			abierto4 = false;
+		}
+	}
 	//Anmimacion Sillon
 	if (keys[GLFW_KEY_L]) {
 
@@ -972,7 +1052,27 @@ void animacion()
 			giro2 = 0;
 		}
 	}
+	//Animacion PuertaCocina
+	if (abierto4)
+	{
+		if (rotPuerta3 >= -90) {
+			rotPuerta3 -= 0.5;
+		}
+		if (rotPuerta3 == -90) {
+			giro4 = 1;
 
+		}
+
+	}
+
+	if (cerrado4) {
+		if (rotPuerta3 <= 0) {
+			rotPuerta3 += 0.5;
+		}
+		if (rotPuerta3 == 0) {
+			giro4 = 0;
+		}
+	}
 	//Animacion Sillon
 	if (abierto3)
 	{
